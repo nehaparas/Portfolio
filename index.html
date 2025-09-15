@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neha Paras | Digital Health Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f8f8f8; /* Changed to ivory white */
+            color: #1a1a1a;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        .header-bg {
+            background-color: #ffffff;
+            border-bottom: 1px solid #e5e7eb;
+        }
+        .section-title {
+            color: #8B0000;
+            font-weight: 700;
+            letter-spacing: 0.05em;
+        }
+        .subtle-line {
+            height: 1px;
+            background-color: #d1d5db;
+        }
+        .project-card, .article-card {
+            background-color: #ffffff;
+            border: 1px solid #e5e7eb;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        .project-card:hover, .article-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+        }
+        .btn-primary {
+            background-color: #C04038; /* Changed to new color */
+            color: #ffffff;
+            transition: background-color 0.2s;
+        }
+        .btn-primary:hover {
+            background-color: #A8382F; /* Changed to darker shade of new color */
+        }
+        .portfolio-image {
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+            display: block;
+        }
+    </style>
+</head>
+
+<body class="bg-gray-100 antialiased">
+
+<!-- Header Section -->
+<header class="bg-[#8B0000] py-4 mb-8">
+    <div class="container flex justify-between items-center text-white">
+        <h1 class="text-3xl font-bold tracking-tight">
+            <a href="#" class="hover:text-gray-200 transition-colors">Neha Paras</a>
+        </h1>
+        <nav>
+            <ul class="flex space-x-6 font-medium">
+                <li><a href="#about" class="hover:text-gray-200 transition-colors">About</a></li>
+                <li><a href="#work" class="hover:text-gray-200 transition-colors">Work</a></li>
+                <li><a href="#articles" class="hover:text-gray-200 transition-colors">Articles</a></li>
+                <li><a href="#contact" class="hover:text-gray-200 transition-colors">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<main class="container">
+
+<!-- Hero/About Me Section -->
+<section id="about" class="flex flex-col md:flex-row items-center justify-between py-12 px-6 bg-white rounded-xl shadow-sm mb-12 border border-[#8B0000]">
+    <div class="md:w-3/5 md:pr-12">
+        <h2 class="text-3xl font-bold text-gray-800 mb-2 tracking-tight">
+            Hi there! I'm <span class="text-[#C04038]">Neha Paras</span>, nice to meet you!
+        </h2>
+        <p class="text-xl text-gray-600 mb-6">
+            Passionate About Digital Health and Population Health Solutions
+        </p>
+        <p class="text-gray-700 text-lg leading-relaxed mb-6">
+            My interest lies at the intersection between health and technology, where I seek to leverage data in order to improve and install sustainable health outcomes within digital health. I strongly believe in utilizing technology and digital platforms to expand access to care for patients outside of a clinical setting using mobile health applications and innovative technology. 
+        </p>
+        <p class="text-gray-700 text-lg leading-relaxed mb-6">
+            I have valued experience in computational research, epidemiological research methods, infectious disease forecasting, working with the social determinants of health, and delivering presentations. As I further my career path, I continue to feel passionate about transforming population health issues into meaningful solutions with the help of visualizations and mathematical models. I enjoy patient-facing interactions, promoting health literacy and awareness, and working with data to bring meaning to numbers.
+        </p>
+        <div class="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-4">
+            <a href="https://www.linkedin.com/in/neha-paras/" class="btn-primary px-6 py-3 rounded-full text-lg font-semibold inline-block shadow-md hover:shadow-lg text-center">View My LinkedIn</a>
+            <a href="https://drive.google.com/file/d/1ZO5ugbB7TYgYzQHcV_xK8QrPW9AeXLqp/view?usp=sharing" class="btn-primary px-6 py-3 rounded-full text-lg font-semibold inline-block shadow-md hover:shadow-lg text-center" target="_blank">View My Resume</a>
+        </div>
+    </div>
+    <div class="md:w-2/5 mt-8 md:mt-0 flex justify-center">
+        <img src="NehaCollegeofHealth.jpeg" alt="Neha Paras at Lehigh University" class="rounded-lg w-full h-auto object-cover shadow-lg border-2 border-[#C04038] transition-transform duration-300 transform hover:scale-105">
+    </div>
+</section>
+
+<div class="subtle-line my-12"></div>
+
+    <!-- Featured Work Section -->
+    <section id="work" class="py-12 px-6 bg-white rounded-xl shadow-sm border border-[#8B0000]">
+        <div class="flex items-center space-x-4 mb-8">
+            <h3 class="text-2xl md:text-3xl font-bold section-title">Featured Work</h3>
+        </div>
+
+        <div class="project-card rounded-lg overflow-hidden shadow-md">
+            <img src="www.png" alt="Watermelon Meow Meow" class="portfolio-image h-64">
+            <div class="p-6">
+                <h4 class="text-xl font-semibold text-gray-800 mb-2">Creating a Gamified Disease Outbreak in Real-Time: Watermelon Meow Meow</h4>
+                <p class="text-gray-600 leading-relaxed mb-4">
+                    I created a web application to help simulate a fictitious disease outbreak in real-time, ultimately designed to investigate outbreak dynamics within a real-world social network. In September 2024, over 600 students, faculty, and staff at Lehigh University “transmitted” the infection by sharing around a children's video representing the pathogen in our study.
+                </p>
+                <p class="text-gray-600 leading-relaxed mb-4">
+                    The website captures who was infected by another and when the infection occured, producing a time-resolved, human-generated transmission network in a closed population. I developed this application using AWS, S3, and Streamlit and included modeling features such as individual level infection tracking, contact network visualizations, and cumulative case graphs.
+                </p>
+                
+                <a href="https://wmm2-2024.streamlit.app/" class="text-[#C04038] hover:underline font-semibold transition-colors">View Project &rarr;</a>
+            </div>
+        </div>
+    </section>
+
+    <div class="subtle-line my-12"></div>
+
+    <!-- Related Articles & Features Section -->
+    <section id="articles" class="py-12 px-6 bg-white rounded-xl shadow-sm border border-[#8B0000]">
+        <div class="flex items-center space-x-4 mb-8">
+            <h3 class="text-2xl md:text-3xl font-bold section-title">Related Articles & Features</h3>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <!-- Article Card 1: CHOP Co-op -->
+            <div class="article-card rounded-lg overflow-hidden shadow-md">
+                <img src="IMG_2738.jpg" alt="CHOP Co-op" class="portfolio-image h-48">
+                <div class="p-4">
+                    <h5 class="text-lg font-semibold text-gray-800 mb-2">My Experience as the First Digital Health Co-op at CHOP</h5>
+                    <p class="text-sm text-gray-500 mb-2">Children's Hospital of Philadelphia</p>
+                    <p class="text-gray-600 text-sm leading-relaxed mb-4">
+                        This article details my experiences as the first Lehigh University co-op on the Digital Health team at the Children's Hospital of Philadelphia, where I blended my academic backgrounds of Population Health and Computer Science to propel meaningful innovation on the Remote Patient Monitoring portfolio.
+                    </p>
+                    <p class="text-gray-600 text-sm leading-relaxed mb-4">
+                        I primarily supported the launch of multiple Care Companion MyChart programs, designed with a special focus on user experience to help families stay engaged with their care between visits. I also drove go-live readiness for five of these software-based programs by coordinating workflow testing with internal Epic analysts, clinical teams, and external vendors to promote smooth, patient-centered deployment.
+                    </p>
+                    <a href="https://health.lehigh.edu/news/lehighs-college-of-health-students-gain-real-world-experience-in-digital-health-thanks-to-chop?utm_source=linkedin&utm_medium=organic&utm_content=lehighuniversityinternshipdigitalhealth&utm_campaign=brand" class="text-[#C04038] hover:underline text-sm font-semibold transition-colors">Read More &rarr;</a>
+                </div>
+            </div>
+
+            <!-- Article Card 2: Lehigh Admissions -->
+            <div class="article-card rounded-lg overflow-hidden shadow-md">
+                <img src="NehaHeadshot.JPG" alt="Lehigh University Admissions" class="portfolio-image h-48">
+                <div class="p-4">
+                    <h5 class="text-lg font-semibold text-gray-800 mb-2">Student Profile for Lehigh University Admissions</h5>
+                    <p class="text-sm text-gray-500 mb-2">Lehigh University Admissions</p>
+                    <p class="text-gray-600 text-sm leading-relaxed mb-4">
+                        I was featured in an admissions profile to help promote the upcoming College of Health at Lehigh University, and was thrilled to share how I was making the most of Lehigh from the very beginning! From the start, I was deeply invested in helping define the experience of future students. 
+                    </p>
+                    <p class="text-gray-600 text-sm leading-relaxed mb-4">
+                        As part of the Student Advisory Council, I contributed input towards curriculum design, participated in strategic planning conferences, and worked alongside faculty and the Dean's Advisory Board to ensure that the courses and learning environments reflected what students need. Being part of building something from the ground up is incredibly rewarding, and I am thankful to have been at Lehigh University at the right time!
+                    </p>
+                    <a href="https://www2.lehigh.edu/admissions/student-profiles/neha-paras" class="text-[#C04038] hover:underline text-sm font-semibold transition-colors">Read More &rarr;</a>
+                </div>
+            </div>
+
+            <!-- Article Card 3: Diwali Show -->
+            <div class="article-card rounded-lg overflow-hidden shadow-md">
+                <img src="20231103_Diwali_MLS-34.jpg" alt="Diwali Show" class="portfolio-image h-48">
+                <div class="p-4">
+                    <h5 class="text-lg font-semibold text-gray-800 mb-2">Annual Diwali Show at Lehigh University</h5>
+                    <p class="text-sm text-gray-500 mb-2">South Asian Student Association</p>
+                    <p class="text-gray-600 text-sm leading-relaxed mb-4">
+                        Each year, the South Asian Student Association (SASA) at Lehigh University puts on a Diwali Show, where we encourage students to bring talents of all kinds together for a jam-packed night of performance and celebration. This event showcases Hindu culture through a series of musical performances, comedy skits, and an authentic South Asian dinner. 
+                    </p>
+                    <p class="text-gray-600 text-sm leading-relaxed mb-4">
+                        I had the honor of hosting the show for three consecutive years and creatively introduced each peer of mine who contributed towards the show, either on stage or off stage. I was able to participate in two dances amidst my emcee responsibilities for a theater of 1000 people. In my last year, I took part in the Senior Dance and also performed a dance from the Bollywood Dance class that I enrolled in at Lehigh University.
+                    </p>
+                    <ul class="list-disc list-inside text-gray-600 text-sm space-y-1">
+                        <li><a href="https://www.youtube.com/watch?v=cMQl0-Q-PSI" class="text-[#C04038] hover:underline font-semibold">Lehigh University SASA 2024 - Full Show</a></li>
+                        <li><a href="https://www.youtube.com/watch?v=UVf8EFHV-DE" class="text-[#C04038] hover:underline font-semibold">Lehigh University SASA 2022 - Full Show</a></li>
+                        <li><a href="https://www.youtube.com/watch?v=n7PvZ_tKzUU" class="text-[#C04038] hover:underline font-semibold">Diwali Show 2024 - Bollywood Dance</a></li>
+                        <li><a href="https://www.youtube.com/watch?v=ZEXqdvZlGYM" class="text-[#C04038] hover:underline font-semibold">Diwali Show 2024 - Senior Dance</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="subtle-line my-12"></div>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-12 px-6 bg-white rounded-xl shadow-sm mb-12 text-center border border-[#8B0000]">
+        <h3 class="text-2xl md:text-3xl font-bold section-title mb-4">Let's Connect</h3>
+        <p class="text-gray-600 text-lg mb-8 max-w-xl mx-auto">
+            Feel free to reach out through email or Linkedin using the icons seen below. Looking forward to connecting!
+        </p>
+        <div class="flex justify-center space-x-6">
+            <a href="mailto:neha.s.paras@gmail.com" class="text-gray-700 hover:text-[#C04038] transition-colors">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 inline-block" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                </svg>
+            </a>
+            <a href="http://linkedin.com/in/neha-paras" target="_blank" class="text-gray-700 hover:text-[#C04038] transition-colors">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 inline-block" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M4.98 3.5c0 1.381-1.11 2.5-2.48 2.5S0 4.881 0 3.5C0 2.121 1.11 1 2.48 1s2.5 1.121 2.5 2.5zm-2.5 4a.5.5 0 00-.5.5v13.5a.5.5 0 00.5.5h5a.5.5 0 00.5-.5V8a.5.5 0 00-.5-.5h-5zm7.5 0a.5.5 0 00-.5.5v13.5a.5.5 0 00.5.5h5a.5.5 0 00.5-.5V14.5c0-1.879-1.219-2.75-2.5-2.75s-2.5.871-2.5 2.75V21a.5.5 0 00.5.5h5a.5.5 0 00.5-.5V14c0-2.825 1.571-5.25 5.5-5.25a.5.5 0 00.5-.5V8a.5.5 0 00-.5-.5h-5.5a.5.5 0 00-.5.5V14c0-1.879-1.219-2.75-2.5-2.75z" />
+                </svg>
+            </a>
+        </div>
+    </section>
+
+</main>
+
+<footer class="text-center text-gray-600 text-sm py-8">
+    &copy; 2025 Neha Paras. All rights reserved.
+</footer>
+
+</body>
+</html>
