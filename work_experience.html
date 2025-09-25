@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Work Experience | Neha Paras</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f8f8f8; /* Changed to ivory white */
+            color: #1a1a1a;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        .header-bg {
+            background-color: #ffffff;
+            border-bottom: 1px solid #e5e7eb;
+        }
+        .section-title {
+            color: #8B0000;
+            font-weight: 700;
+            letter-spacing: 0.05em;
+        }
+        .subtle-line {
+            height: 1px;
+            background-color: #d1d5db;
+        }
+        .project-card, .article-card {
+            background-color: #ffffff;
+            border: 1px solid #e5e7eb;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        .project-card:hover, .article-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+        }
+        .btn-primary {
+            background-color: #C04038; /* Changed to new color */
+            color: #ffffff;
+            transition: background-color 0.2s;
+        }
+        .btn-primary:hover {
+            background-color: #A8382F; /* Changed to darker shade of new color */
+        }
+        .portfolio-image {
+            object-fit: cover;
+            object-position: 50% 36%;
+            width: 100%;
+            height: 100%;
+            display: block;
+        }
+    </style>
+</head>
+<body class="bg-gray-100 antialiased">
+
+<!-- Header Section -->
+<header class="bg-[#8B0000] py-4 mb-8">
+    <div class="container flex justify-between items-center text-white">
+        <h1 class="text-3xl font-bold tracking-tight">
+            <a href="index.html" class="hover:text-gray-200 transition-colors">Neha Paras</a>
+        </h1>
+        <nav>
+            <ul class="flex space-x-6 font-medium">
+                <li><a href="index.html#about" class="hover:text-gray-200 transition-colors">About</a></li>
+                <li><a href="work_experience.html" class="hover:text-gray-200 transition-colors">Work Experience</a></li>
+                <li><a href="academic_experience.html" class="hover:text-gray-200 transition-colors">Academic Experience</a></li>
+                <li><a href="personal_projects.html" class="hover:text-gray-200 transition-colors">Personal Projects</a></li>
+                <li><a href="a_little_more_about_me.html" class="hover:text-gray-200 transition-colors">A Little More About Me</a></li>
+                <li><a href="index.html#contact" class="hover:text-gray-200 transition-colors">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<main class="container">
+    <section id="work-experience" class="py-12 px-6 bg-white rounded-xl shadow-sm border border-[#8B0000]">
+        <h3 class="text-2xl md:text-3xl font-bold section-title mb-8">Work Experience: Children's Hospital of Philadelphia</h3>
+        
+        <div class="project-card rounded-lg overflow-hidden shadow-md">
+            <img src="IMG_2738.jpg" alt="CHOP Co-op" class="portfolio-image h-96">
+            <div class="p-6">
+                <h4 class="text-xl font-semibold text-gray-800 mb-2">My Experience as the First Digital Health Co-op at CHOP</h4>
+                <p class="text-gray-600 leading-relaxed mb-4">
+                    This article details my experiences as the first Lehigh University co-op on the Digital Health team at the Children's Hospital of Philadelphia, where I blended my academic backgrounds of Population Health and Computer Science to propel meaningful innovation on the Remote Patient Monitoring portfolio.
+                </p>
+                <p class="text-gray-600 leading-relaxed mb-4">
+                    I primarily supported the launch of multiple Care Companion MyChart programs, designed with a special focus on user experience to help families stay engaged with their care between visits. I also drove go-live readiness for five of these software-based programs by coordinating workflow testing with internal Epic analysts, clinical teams, and external vendors to promote smooth, patient-centered deployment.
+                </p>
+                <a href="https://health.lehigh.edu/news/lehighs-college-of-health-students-gain-real-world-experience-in-digital-health-thanks-to-chop?utm_source=linkedin&utm_medium=organic&utm_content=lehighuniversityinternshipdigitalhealth&utm_campaign=brand" class="text-[#C04038] hover:underline font-semibold transition-colors" target="_blank">Read More &rarr;</a>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer class="text-center text-gray-600 text-sm py-8">
+    &copy; 2025 Neha Paras. All rights reserved.
+</footer>
+
+</body>
+</html>

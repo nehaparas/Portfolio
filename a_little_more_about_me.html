@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Little More About Me | Neha Paras</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f8f8f8; /* Changed to ivory white */
+            color: #1a1a1a;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        .header-bg {
+            background-color: #ffffff;
+            border-bottom: 1px solid #e5e7eb;
+        }
+        .section-title {
+            color: #8B0000;
+            font-weight: 700;
+            letter-spacing: 0.05em;
+        }
+        .subtle-line {
+            height: 1px;
+            background-color: #d1d5db;
+        }
+        .project-card, .article-card {
+            background-color: #ffffff;
+            border: 1px solid #e5e7eb;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        .project-card:hover, .article-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+        }
+        .btn-primary {
+            background-color: #C04038; /* Changed to new color */
+            color: #ffffff;
+            transition: background-color 0.2s;
+        }
+        .btn-primary:hover {
+            background-color: #A8382F; /* Changed to darker shade of new color */
+        }
+        .portfolio-image {
+            object-fit: cover; /* Changed to cover to fill the space */
+            width: 100%;
+            height: 100%;
+            display: block;
+        }
+    </style>
+</head>
+<body class="bg-gray-100 antialiased">
+
+<!-- Header Section -->
+<header class="bg-[#8B0000] py-4 mb-8">
+    <div class="container flex justify-between items-center text-white">
+        <h1 class="text-3xl font-bold tracking-tight">
+            <a href="index.html" class="hover:text-gray-200 transition-colors">Neha Paras</a>
+        </h1>
+        <nav>
+            <ul class="flex space-x-6 font-medium">
+                <li><a href="index.html#about" class="hover:text-gray-200 transition-colors">About</a></li>
+                <li><a href="work_experience.html" class="hover:text-gray-200 transition-colors">Work Experience</a></li>
+                <li><a href="academic_experience.html" class="hover:text-gray-200 transition-colors">Academic Experience</a></li>
+                <li><a href="personal_projects.html" class="hover:text-gray-200 transition-colors">Personal Projects</a></li>
+                <li><a href="a_little_more_about_me.html" class="hover:text-gray-200 transition-colors">A Little More About Me</a></li>
+                <li><a href="index.html#contact" class="hover:text-gray-200 transition-colors">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<main class="container">
+    <section id="more-about-me" class="py-12 px-6 bg-white rounded-xl shadow-sm border border-[#8B0000]">
+        <h3 class="text-2xl md:text-3xl font-bold section-title mb-8">A Little More About Me</h3>
+        
+        <!-- Use flexbox for a horizontal layout on larger screens -->
+        <div class="flex flex-col lg:flex-row gap-8">
+            <!-- Article Card 1: Lehigh Admissions -->
+            <div class="article-card rounded-lg overflow-hidden shadow-md flex-1">
+                <img src="NehaHeadshot.JPG" alt="Lehigh University Admissions" class="portfolio-image h-64">
+                <div class="p-4">
+                    <h5 class="text-lg font-semibold text-gray-800 mb-2">Student Profile for Lehigh University Admissions</h5>
+                    <p class="text-sm text-gray-500 mb-2">Lehigh University Admissions</p>
+                    <p class="text-gray-600 text-sm leading-relaxed mb-4">
+                        I was featured in an admissions profile to help promote the upcoming College of Health at Lehigh University, and was thrilled to share how I was making the most of Lehigh from the very beginning! From the start, I was deeply invested in helping define the experience of future students. 
+                    </p>
+                    <p class="text-gray-600 text-sm leading-relaxed mb-4">
+                        As part of the Student Advisory Council, I contributed input towards curriculum design, participated in strategic planning conferences, and worked alongside faculty and the Dean's Advisory Board to ensure that the courses and learning environments reflected what students need. Being part of building something from the ground up is incredibly rewarding, and I am thankful to have been at Lehigh University at the right time!
+                    </p>
+                    <a href="https://www2.lehigh.edu/admissions/student-profiles/neha-paras" class="text-[#C04038] hover:underline text-sm font-semibold transition-colors" target="_blank">Read More &rarr;</a>
+                </div>
+            </div>
+
+            <!-- Article Card 2: Diwali Show -->
+            <div class="article-card rounded-lg overflow-hidden shadow-md flex-1">
+                <img src="diwaligreen.JPG" alt="Diwali Show" class="portfolio-image h-64" style="object-position: 50% 30%;">
+                <div class="p-4">
+                    <h4 class="text-lg font-semibold text-gray-800 mb-2">Annual Diwali Show at Lehigh University</h4>
+                    <p class="text-gray-600 text-sm mb-4">South Asian Student Association</p>
+                    <p class="text-gray-600 text-sm leading-relaxed mb-4">
+                        Each year, the South Asian Student Association (SASA) at Lehigh University puts on a Diwali Show, where we encourage students to bring talents of all kinds together for a jam-packed night of performance and celebration. This event showcases Hindu culture through a series of musical performances, comedy skits, and an authentic South Asian dinner. 
+                    </p>
+                    <p class="text-gray-600 text-sm leading-relaxed mb-4">
+                        I had the honor of hosting the show for three consecutive years and creatively introduced each peer of mine who contributed towards the show, either on stage or off stage. I was able to participate in two dances amidst my emcee responsibilities for a theater of 1000 people. In my last year, I took part in the Senior Dance and also performed a dance from the Bollywood Dance class that I enrolled in at Lehigh University.
+                    </p>
+                    <ul class="list-disc list-inside text-gray-600 text-sm space-y-1">
+                        <li><a href="https://www.youtube.com/watch?v=cMQl0-Q-PSI" class="text-[#C04038] hover:underline font-semibold" target="_blank">Lehigh University SASA 2024 - Full Show</a></li>
+                        <li><a href="https://www.youtube.com/watch?v=UVf8EFHV-DE" class="text-[#C04038] hover:underline font-semibold" target="_blank">Lehigh University SASA 2022 - Full Show</a></li>
+                        <li><a href="https://www.youtube.com/watch?v=n7PvZ_tKzUU" class="text-[#C04038] hover:underline font-semibold" target="_blank">Diwali Show 2024 - Bollywood Dance</a></li>
+                        <li><a href="https://www.youtube.com/watch?v=ZEXqdvZlGYM" class="text-[#C04038] hover:underline font-semibold" target="_blank">Diwali Show 2024 - Senior Dance</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- Article Card 3: barceloneha website -->
+            <div class="article-card rounded-lg overflow-hidden shadow-md flex-1">
+                <img src="IMG_4723.jpeg" alt="FC Barcelona" class="portfolio-image h-64" style="object-position: 50% 25%;">
+                <div class="p-4">
+                    <h5 class="text-lg font-semibold text-gray-800 mb-2">My Barcelona Experience: Barceloneha</h5>
+                    <p class="text-gray-600 text-sm leading-relaxed mb-4">
+                        I created this website to share my experiences, recommendations, and personal insights from living in Barcelona for three months. I truly appreciate Spanish culture as someone who studied the language for five years, It's a passion project dedicated to showcasing the city's unique culture and hidden gems.
+                    </p>
+                    <a href="#" class="text-[#C04038] hover:underline text-sm font-semibold transition-colors" target="_blank">Visit My Barcelona Site &rarr;</a>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer class="text-center text-gray-600 text-sm py-8">
+    &copy; 2025 Neha Paras. All rights reserved.
+</footer>
+
+</body>
+</html>
